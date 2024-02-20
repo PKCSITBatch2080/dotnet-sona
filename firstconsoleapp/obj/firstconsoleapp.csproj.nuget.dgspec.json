@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dell\\Desktop\\PKCSIT\\firstconsoleapp\\firstconsoleapp.csproj": {}
+    "C:\\Apps\\gitsona\\dotnet-sona\\firstconsoleapp\\firstconsoleapp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dell\\Desktop\\PKCSIT\\firstconsoleapp\\firstconsoleapp.csproj": {
+    "C:\\Apps\\gitsona\\dotnet-sona\\firstconsoleapp\\firstconsoleapp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dell\\Desktop\\PKCSIT\\firstconsoleapp\\firstconsoleapp.csproj",
+        "projectUniqueName": "C:\\Apps\\gitsona\\dotnet-sona\\firstconsoleapp\\firstconsoleapp.csproj",
         "projectName": "firstconsoleapp",
-        "projectPath": "C:\\Users\\Dell\\Desktop\\PKCSIT\\firstconsoleapp\\firstconsoleapp.csproj",
+        "projectPath": "C:\\Apps\\gitsona\\dotnet-sona\\firstconsoleapp\\firstconsoleapp.csproj",
         "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dell\\Desktop\\PKCSIT\\firstconsoleapp\\obj\\",
+        "outputPath": "C:\\Apps\\gitsona\\dotnet-sona\\firstconsoleapp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -53,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
