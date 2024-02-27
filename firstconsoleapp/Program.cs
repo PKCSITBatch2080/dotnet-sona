@@ -1,36 +1,35 @@
-﻿using System;
-class Name
-{
-    public static void greeter()
-    {
-        Console.WriteLine("Your name:");
-        string fullname = Console.ReadLine();
-        string cfullname = fullname.ToUpper();
-        Console.WriteLine($"Hello, {cfullname} Ji!");
+﻿﻿using System;
 
-        Console.WriteLine("Your DOB (YYYY/MM/DD):");
-        string dobString = Console.ReadLine();
-        DateTime dob = DateTime.Parse(dobString);
-        string dobFriendly = dob.ToString("MMMM dd, yyyy");
-        Console.WriteLine($"Your date of birth is: {dobFriendly}");
-        DateTime today = DateTime.Today;
+Console.WriteLine(3687426);
 
-TimeSpan age = today - dob;
-int totalDays = Convert.ToInt32(age.TotalDays);
+DataTypes dt = new();
+dt.Learn();
 
-int years = totalDays / 365;
-int months = (totalDays % 365) / 30;
-int weeks = (totalDays % 365 % 30) / 7;
-int days = totalDays % 365 % 30 % 7;
+Methods m = new();
+m.Greet("Hi");
+m.CalculateBMI(233.3f, 343.34f);
 
-Console.WriteLine($"Hello, {cfullname} Ji");
-Console.WriteLine($"Your DOB is {dob.ToString("dddd, dd MMMM yyyy")}.");
+var highest = m.GetMax(3.4, 5.6, 78.4, 23.4);
+var highest2 = m.GetMax(3.4, 5.6);
+var highest3 = m.GetMax(3.4, 5.6, 78.4, 23.4, 67.8);
+var highest4 = m.GetMax(3.4);
 
-Console.WriteLine($"You are {years} years {months} months {weeks} weeks and {days} days old. \n");
-    }
-    public static void Main(string[] args)
-    {
-        greeter();
-    }
-}
+Generics g = new();
+g.Display<string>("jsdlkfjsf ");
+g.Display<int>(786);
+
+var iliya = new Student();
+var smriti = new Student("Smiriti KC", 123);
+
+iliya.RollNumber = 22;      // Assined
+smriti.RollNumber = 223;    // Not Assigned
+
+//smriti.Dob = DateTime.Now;
+var rekha = new CSStudent("Rekha Aryal", 24, "Hospital Managemenet System");
+rekha.DisplayInfo();
+
+var sapana = new CyberSecurityStudent("Sapana Shrestha", 11, "HMS", "RedHat");
+sapana.DisplayInfo();
+
+
 

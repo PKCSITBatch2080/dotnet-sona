@@ -1,40 +1,43 @@
 using System;
-using System.Data;
-using System.Dynamic;
 
 class Student
-{
+{    
+    // Default Constructor
     public Student()
-    {}
-    public Student(string n, byte rn)   //default constructor( a method without return type, name should match with class)
     {
-        name=n;
-        rollNumber=rn;
 
     }
-    string name;  //bydefault private hunxa
+    // Parameterized constructor
+    public Student(string n, byte rn)
+    {
+        name = n;
+        RollNumber = rn;
+    }
+    
+    string name;
     byte rollNumber;
-    public byte RollNumber   //free implement property
+    public byte RollNumber
     {
         get
         {
             return rollNumber;
         }
-        set{
-            if(value<=100)
+        set
+        {
+            if (value <= 100)
             {
-                rollNumber=value;
+                rollNumber = value;
             }
         }
-
     }
-    public string Address{get;set;}   //auto implemented property
-    DateTime dob;
-    public void DisplayInfo()
+    public string Address { get; set; }      //Auto implemented property
+    public DateTime Dob { get; }
+
+    public virtual void DisplayInfo()
     {
-        Console.WriteLine($"Student Name:(name)");
-        Console.WriteLine($"Student Roll no:(rollNumber)");
-        Console.WriteLine($"Student Dob:(dob)");
-        Console.WriteLine($"Student Address:(Address)");
+        Console.WriteLine($"Student Name: {name}");
+        Console.WriteLine($"Student Roll Number: {rollNumber}");
+        Console.WriteLine($"Student Dob: {Dob}");
+        Console.WriteLine($"Student Address: {Address}");
     }
 }
