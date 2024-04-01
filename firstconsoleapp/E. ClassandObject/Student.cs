@@ -12,9 +12,16 @@ class Student
     {
         name = n;
         RollNumber = rn;
+    
+    }
+    public Student(string n, byte rn,DateTime dob)
+    {
+        name = n;
+        RollNumber = rn;
+        Dob = dob;
     }
     
-    string name;
+    public string name;
     byte rollNumber;
     public byte RollNumber
     {
